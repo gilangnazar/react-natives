@@ -13,3 +13,19 @@ export type SholatData = {
 };
 
 export type HijriahDate = [string, string, string];
+
+export interface AyatItem {
+  arab: string;
+  asbab: string;
+  audio: string;
+  ayah: string;
+  hizb: string;
+  id: string;
+  juz: string;
+  latin: string;
+  notes: string | null;
+  page: string;
+  surah: string;
+  text: string;
+  theme: string;
+}

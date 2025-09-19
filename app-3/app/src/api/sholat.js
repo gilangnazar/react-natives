@@ -23,3 +23,12 @@ export async function fetchDataCalHijr() {
     console.error(error);
   }
 }
+
+export async function fetchDataSurah() {
+  try {
+    const res = await axios.get('https://api.myquran.com/v2/quran/ayat/2/1/30');
+    return res.data;
+  } catch (error) {
+    console.log(error);
+  } 
+}
